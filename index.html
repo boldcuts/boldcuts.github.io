@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bold Cuts Publisher</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: single reading column, bold wordmark header, policy sections with anchor links */
+:root{
+  --bg:#f6f5f3; --fg:#1b1a19; --muted:#5d5955; --line:#dedad5; --accent:#d1301f; --panel:#ffffff;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body:"Source Serif 4", Georgia, "Times New Roman", serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#141312;--fg:#ece9e5;--muted:#a7a29c;--line:#2e2c2a;--accent:#ff5a46;--panel:#1c1b1a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141312;--fg:#ece9e5;--muted:#a7a29c;--line:#2e2c2a;--accent:#ff5a46;--panel:#1c1b1a;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+header{display:flex;flex-direction:column;gap:10px;border-bottom:3px solid var(--fg);padding-bottom:20px}
+.mark{font-family:var(--display);font-weight:800;font-size:clamp(34px,8vw,52px);letter-spacing:-.02em;line-height:1;text-transform:uppercase}
+.mark span{color:var(--accent)}
+.sub{font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;flex-wrap:wrap;gap:8px 18px;font-family:var(--display);font-size:15px}
+nav a{color:var(--fg);text-decoration-color:var(--accent);text-underline-offset:4px}
+nav a:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+section{display:flex;flex-direction:column;gap:12px}
+h2{font-family:var(--display);font-weight:800;font-size:24px;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:17px;margin:8px 0 0}
+p,ul{margin:0}
+ul{padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.meta{font-family:var(--display);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.contact{background:var(--panel);border:1px solid var(--line);padding:16px 18px;font-family:var(--display);font-size:15px;user-select:all;word-break:break-all}
+a{color:var(--fg)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">Bold <span>Cuts</span></div>
+    <div class="sub">Publisher · Privacy policy &amp; terms of service</div>
+    <nav><a href="#about">About</a><a href="#privacy">Privacy policy</a><a href="#terms">Terms of service</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Bold Cuts is a short-form video brand that publishes clips on its own YouTube, Instagram and TikTok accounts. Bold Cuts Publisher is the internal tool Bold Cuts uses to upload those videos to its own accounts through the official platform APIs. It is not offered to the public and does not manage anyone else's account.</p>
+    <p><strong>Bold Cuts Publisher uses YouTube API Services.</strong> By using it you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p class="meta">Last updated: 17 October 2026</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <h3>What the tool accesses</h3>
+    <ul>
+      <li>Only the Bold Cuts accounts that the owner connects himself.</li>
+      <li>The permissions needed to upload videos and set their titles, descriptions and visibility, and to read the basic account name to confirm the right channel is connected.</li>
+    </ul>
+    <h3>What we store</h3>
+    <ul>
+      <li>Access tokens are kept only on the owner's computer, in a private file. They are never published or sent to third parties.</li>
+      <li>A local log of published videos (date, platform and link).</li>
+    </ul>
+    <h3>What we do not do</h3>
+    <ul>
+      <li>We do not collect personal data from viewers or other users.</li>
+      <li>We do not sell, share or transfer any data, and we do not use it for advertising.</li>
+      <li>Google user data is used only to upload Bold Cuts videos, in line with the Google API Services User Data Policy, including its Limited Use requirements.</li>
+    </ul>
+    <h3>YouTube API Services</h3>
+    <ul>
+      <li>This tool uses YouTube API Services. Use of YouTube data is governed by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> (https://policies.google.com/privacy).</li>
+      <li>YouTube data used: the authorised channel's ID and name, and the upload permission (videos.insert) to publish our own videos. No YouTube data is shared with third parties.</li>
+      <li>No cookies or tracking technologies are placed on users' devices by this tool.</li>
+    </ul>
+    <h3>Revoking access and data deletion</h3>
+    <p>Access can be revoked at any time on the Google security settings page: <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>. When access is revoked, or on request by email to the contact below, the stored access tokens and any YouTube API data are deleted within 7 days. Stored API data is also refreshed or deleted at least every 30 days.</p>
+  </section>
+
+  <section id="terms">
+    <h2>Terms of service</h2>
+    <ul>
+      <li>Bold Cuts Publisher is for the internal use of Bold Cuts only.</li>
+      <li>By using Bold Cuts Publisher you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</li>
+      <li>Videos are published only from licensed or authorised sources (Creative Commons with attribution, creators who allow clipping, or paid clipping campaigns), with credit to the original source.</li>
+      <li>Use of each platform also follows that platform's own terms: YouTube Terms of Service, Instagram Terms of Use and TikTok Terms of Service.</li>
+      <li>The tool is provided as is, without warranties.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For questions about this policy or to request removal of content:</p>
+    <div class="contact">boldcuts.daily@gmail.com</div>
+  </section>
+</div>
+</body>
+</html>
